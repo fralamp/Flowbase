@@ -117,12 +117,21 @@
   line-height: 20px;
   letter-spacing: -0.376923px;
   color: #ffffff;
+  transition: all .4s ease-in-out;
 }
 
-.header__link:hover, .header__link:focus{
+.header__link:hover , 
+.header__link:focus {
   color: #ffac12;
-  transition: .3s;
 }
+
+
+.header__link:hover svg, 
+.header__link:focus svg{
+  transform: translateX(20px);
+  transition: all .5s ease;
+}
+
 
 .header__work span {
   display: block;
@@ -221,17 +230,21 @@
   line-height: 26px;
   letter-spacing: -0.502564px;
   color: #000000;
+  transition: all .3s ease-in-out;
 }
 
 .hero__link span:focus, .hero__link span:hover{
-  color: #FFAC12;
-  transition: .3s;
+  color: #FFAC12;  
+}
+
+.hero__link:focus svg , .hero__link:hover svg{
+  transform: translateX(20px);
+  transition: all .5s ease;
 }
 
 .hero__link .arrow__right path {
   fill: #ffac12;
 }
-
 
 
 /*===================== Ours Advantages=======*/
@@ -581,10 +594,6 @@
 }
 
 .wrapper__content {
-  /* display: flex;
-  flex-direction: column;
-  align-self: center;
-  flex-flow: column nowrap; */
   margin-left: auto;
   margin-right: auto;
   max-width: 475px;
